@@ -1,44 +1,52 @@
 <!DOCTYPE html>
-<html>
+<!--[if lte IE 7 ]><html lang="en" class="old"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+    <head>
+        <link href="favicon.ico" type="image/x-icon" rel="icon" />
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+        <meta charset="utf-8">
+        <title>Dogeipsum - Generate ipsum with Doge! wow much word such ipsum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Dogeipsum - Generate ipsum with Doge! wow">
+        <meta name="keywords" content="doge, lorem, ipsum, lorem ipsum, dogeipsum, wow, much, such, word, words, generate, layout">
+        <meta name="author" content="Dogeipsum">
+        <!-- Twitter -->
+        <meta name="twitter:title" content="Dogeipsum"/>
+        <meta name="twitter:description" content="Dogeipsum - Generate ipsum with Doge! wow"/>
+        <!-- Facebook -->
+        <meta property="og:title" content="Generate ipsum with Doge! wow"/>
+        <meta property="og:site_name" content="Dogeipsum">
+        <meta property="og:url" content="http://dogeipsum.github.io/"/>
+        <meta property="og:description" content="Dogeipsum - Generate ipsum with Doge! wow"/>
+        <meta property="og:type" content="website">
+        <meta property="og:image:type" content="image/jpg">
+        <meta property="og:image:width" content="1149">
+        <meta property="og:image:height" content="1149">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="dogeipsum.github.io : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>dogeipsum.github.io</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/dogeipsum">View on GitHub</a>
-
-          <h1 id="project_title">dogeipsum.github.io</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>WOW</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/normalize.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <script type="text/javascript" src="javascripts/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dogeipsum - Generate ipsum with Doge!</h1>
+            <form role="form" id="dateIpsum">
+                <div class="form-group">
+                    <label for="qtdExpressions">Amount of Expressions</label>
+                    <input type="number" min="0" class="form-control" id="qtdExpressions">
+                </div>
+                <div class="form-group">
+                    <label for="ipsum">Text:</label>
+                    <textarea id="ipsum" class="form-control" style="min-height: 300px;"></textarea>
+                </div>
+                <button type="button" class="btn btn-success" onclick="generateIpsum()">Generate</button>
+                <button type="reset" class="btn btn-danger">Clear</button>
+            </form>
+        </div>
+    </body>
 </html>
